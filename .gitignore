@@ -1,4 +1,9 @@
 *
 
-!~/.config/hypr
-!~/.config/wofi
+#hyprland config
+!/hypr
+!/hypr/**
+
+#hyprland config
+!/wofi
+!/wofi/**
