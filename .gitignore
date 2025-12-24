@@ -1,0 +1,13 @@
+#Ignore all Files
+*
+
+#Unignore all Subfiles
+!*/
+
+#Unignore Hyprland config
+!hypr/
+!hypr/**
+
+#Unignore Wofi config
+!wofi/
+!wofi/**
