@@ -11,3 +11,7 @@
 #Unignore Wofi config
 !wofi/
 !wofi/**
+
+#Unignore zsh config
+!zsh/.zshenv
+!zsh/.zshrc
