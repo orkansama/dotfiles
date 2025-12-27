@@ -59,11 +59,6 @@
     "clock": {
         "tooltip-format": "{calendar}",
         "format-alt": "  {:%a, %d %b %Y}",
-        "format": "  {:%I:%M %p}"
-    },
-    "custom/logo": {
-        "format": "  ",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+        "format": "  {:%H:%M}"
     },
 }
