@@ -4,14 +4,12 @@
     "spacing": 0,
     "height": 34,
     "modules-left": [
-        "custom/logo",
         "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
-        "tray",
         "memory",
         "network",
     ],
@@ -52,9 +50,6 @@
         "interval": 5,
         "format": "󰍛 {}%",
         "max-length": 10
-    },
-    "tray": {
-        "spacing": 10
     },
     "clock": {
         "tooltip-format": "{calendar}",
