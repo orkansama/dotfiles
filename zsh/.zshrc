@@ -11,4 +11,6 @@ setopt SHARE_HISTORY
 export ZSH="$ZDOTDIR/ohmyzsh/"
 ZSH_THEME="agnoster"
 
+plugins=(zoxide)
+
 source "$ZSH/oh-my-zsh.sh"
