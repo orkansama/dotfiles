@@ -1,5 +1,4 @@
-HISTFILE="$ZDOTDIR/.zhistory"
-HISTSIZE=10000
+HISTFILE="$ZDOTDIR/.zhistory" HISTSIZE=10000
 SAVEHIST=10000
 
 setopt HIST_SAVE_NO_DUPS
@@ -8,7 +7,7 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 # OH MY ZSH
-export ZSH="$ZDOTDIR/.oh-my-zsh/"
+export ZSH="$ZDOTDIR/ohmyzsh/"
 ZSH_THEME="agnoster"
 
 plugins=(zoxide archlinux)
