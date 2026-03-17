@@ -8,7 +8,7 @@ setopt SHARE_HISTORY
 
 # OH MY ZSH
 export ZSH="$ZDOTDIR/ohmyzsh/"
-ZSH_THEME="agnoster"
+ZSH_THEME="minimal"
 
 plugins=(zoxide archlinux)
 
