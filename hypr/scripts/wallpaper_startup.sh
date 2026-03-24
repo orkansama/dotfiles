@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Wait until startup
-sleep 5
+sleep 2
 
 # Wallpaper-Ordner
 WALLPAPER_DIR="$HOME/.config/hypr/wallpapers"
