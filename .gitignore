@@ -15,3 +15,6 @@
 #Unignore zsh config
 !zsh/.zshenv
 !zsh/.zshrc
+
+#Unignore alacritty config
+!alacritty/*
