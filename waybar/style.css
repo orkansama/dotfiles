@@ -1,0 +1,21 @@
+.{
+  background: transparent;
+  font-family: "JetbrainsMono Nerd Font";
+  font-size: 15px;
+  min-height: 10px;
+}
+
+#clock {
+  background: #ed8796;
+  border-radius: 10px;
+  min-width: 100px;
+  margin: 6px 5px;
+  padding: 0px 6px;
+}
+
+#workspaces {
+  background: #c6a0f6;
+  border-radius: 10px;
+  margin: 6px 5px;
+  padding: 0px 6px;
+}
