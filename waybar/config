@@ -26,6 +26,9 @@
         "format": "󰍛 {}%",
         "max-length": 10
     },
+    "backlight": {
+        "format": "󰃞 {}%",
+    },
     "clock": {
         "tooltip-format": "{calendar}",
         "format-alt": "  {:%a, %d %b %Y}",
