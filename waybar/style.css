@@ -5,6 +5,13 @@
   min-height: 10px;
 }
 
+#workspaces {
+  background: #c6a0f6;
+  border-radius: 10px;
+  margin: 6px 5px;
+  padding: 0px 6px;
+}
+
 #clock {
   background: #ed8796;
   border-radius: 10px;
