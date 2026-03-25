@@ -1,7 +1,7 @@
 {
     "modules-left": [ "hyprland/workspaces" ],
     "modules-center": [ "clock" ],
-    "modules-right": ["battery", "backlight", "memory", "network"],
+    "modules-right": ["battery#BAT0", "battery#BAT1", "backlight", "memory", "network"],
     "hyprland/workspaces": {
         "persistent-workspaces": {
             "1": [],
@@ -21,7 +21,23 @@
         "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%H:%M}"
     },
-	"battery": {
+	"battery#BAT0": {
+		"bat": "BAT0",
+		"interval": 60,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"events": {
+			"on-discharging-warning": "notify-send -u normal 'Low Battery'",
+			"on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+			"on-charging-100": "notify-send -u normal 'Battery Full!'"
+		},
+		"format": "{capacity}% {icon}",
+		"format-icons": ["", "", "", "", ""],
+		"max-length": 25
+	},
+	"battery#BAT1": {
 		"bat": "BAT1",
 		"interval": 60,
 		"states": {
