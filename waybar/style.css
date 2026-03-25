@@ -20,8 +20,16 @@
   padding: 0px 6px;
 }
 
-#workspaces {
-  background: #c6a0f6;
+#battery {
+  background: #a6e3a1;
+  border-radius: 10px;
+  min-width: 70px;
+  margin: 6px 5px;
+  padding: 0px 6px;
+}
+
+#backlight {
+  background: #74c7ec;
   border-radius: 10px;
   margin: 6px 5px;
   padding: 0px 6px;
