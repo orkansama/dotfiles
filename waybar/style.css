@@ -53,6 +53,7 @@ window#waybar.hidden {
 #memory,
 #network,
 #clock,
+#battery,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
@@ -73,4 +74,9 @@ window#waybar.hidden {
 #clock {
   font-family: JetBrainsMono Nerd Font;
   background-color: #cba6f7;
+}
+
+#battery {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #8aadf4;
 }

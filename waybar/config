@@ -9,10 +9,7 @@
     "modules-center": [
         "clock"
     ],
-    "modules-right": [
-        "memory",
-        "network",
-    ],
+    "modules-right": ["battery", "memory", "network"],
     "wlr/taskbar": {
         "format": "{icon}",
         "on-click": "activate",
@@ -43,7 +40,7 @@
             "2": [],
             "3": [],
             "4": [],
-            "5": []
+            "5": [],
         }
     },
     "memory": {
@@ -56,4 +53,20 @@
         "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%H:%M}"
     },
+	"battery": {
+		"bat": "BAT1",
+		"interval": 60,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"events": {
+			"on-discharging-warning": "notify-send -u normal 'Low Battery'",
+			"on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+			"on-charging-100": "notify-send -u normal 'Battery Full!'"
+		},
+		"format": "{capacity}% {icon}",
+		"format-icons": ["", "", "", "", ""],
+		"max-length": 25
+	},
 }
