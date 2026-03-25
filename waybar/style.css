@@ -12,10 +12,6 @@ window#waybar {
   transition-duration: 0.5s;
 }
 
-window#waybar.hidden {
-  opacity: 0.5;
-}
-
 #workspaces {
   background-color: transparent;
 }
@@ -54,6 +50,7 @@ window#waybar.hidden {
 #network,
 #clock,
 #battery,
+#backlight,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
@@ -79,4 +76,9 @@ window#waybar.hidden {
 #battery {
   font-family: JetBrainsMono Nerd Font;
   background-color: #8aadf4;
+}
+
+#backlight {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #f5bde6;
 }
