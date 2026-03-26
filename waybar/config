@@ -30,7 +30,6 @@
         "format": "󰃞 {}%",
     },
     "clock": {
-        "tooltip-format": "{calendar}",
         "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%H:%M}"
     },
