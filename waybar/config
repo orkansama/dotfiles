@@ -66,4 +66,10 @@
 		"format-icons": ["", "", "", "", ""],
 		"max-length": 25
 	},
+	"network": {
+		"interval": 0,
+		"format-wifi": " {} ({signalStrength}%)",
+		"format-ethernet": "{ifname} ",
+		"format-disconnected": "󱘖",
+	}
 }
