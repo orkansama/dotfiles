@@ -19,19 +19,29 @@
             "3": [],
             "4": [],
             "5": [],
-        }
+        },
     },
     "memory": {
-        "interval": 0,
+        "interval": 5,
         "format": "󰍛 {}%",
-        "max-length": 10
+        "max-length": 10,
+		"tooltip-format": "hello world"
     },
+	"network": {
+		"interval": 5,
+		"format-wifi": " {} ({signalStrength}%)",
+		"format-ethernet": "{ifname}",
+		"format-disconnected": "󱘖",
+		"tooltip-format": "Hello world"
+	},
     "backlight": {
         "format": "󰃞 {}%",
+		"tooltip-format": "Hello world"
     },
     "clock": {
         "format-alt": "  {:%a, %d %b %Y}",
-        "format": "  {:%H:%M}"
+        "format": "  {:%H:%M}",
+		"tooltip-format": "hello world"
     },
 	"battery#BAT0": {
 		"bat": "BAT0",
@@ -47,7 +57,8 @@
 		},
 		"format": "{capacity}% {icon}",
 		"format-icons": ["", "", "", "", ""],
-		"max-length": 25
+		"max-length": 25,
+		"tooltip-format": "Hello world"
 	},
 	"battery#BAT1": {
 		"bat": "BAT1",
@@ -63,12 +74,7 @@
 		},
 		"format": "{capacity}% {icon}",
 		"format-icons": ["", "", "", "", ""],
-		"max-length": 25
+		"max-length": 25,
+		"tooltip-format": "Hello world"
 	},
-	"network": {
-		"interval": 0,
-		"format-wifi": " {} ({signalStrength}%)",
-		"format-ethernet": "{ifname}",
-		"format-disconnected": "󱘖",
-	}
 }
