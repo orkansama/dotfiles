@@ -68,7 +68,7 @@
 	"network": {
 		"interval": 0,
 		"format-wifi": " {} ({signalStrength}%)",
-		"format-ethernet": "{ifname} ",
+		"format-ethernet": "{ifname}",
 		"format-disconnected": "󱘖",
 	}
 }
