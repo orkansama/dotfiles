@@ -36,7 +36,11 @@
 	},
     "backlight": {
         "format": "󰃞 {}%",
-		"tooltip-format": "Hello world"
+		"tooltip-format": "󰃞  {}%",
+		"on-click": "brightnessctl s 100%",
+		"on-click-right": "brightnessctl s 50%",
+		"on-click-middle": "brightnessctl s 0%"
+		}
     },
     "clock": {
 		"timezone": "Europe/Berlin",
