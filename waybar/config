@@ -1,7 +1,7 @@
 {
     "modules-left": [ "hyprland/workspaces" ],
     "modules-center": [ "clock" ],
-    "modules-right": ["battery#BAT0", "battery#BAT1", "backlight", "memory", "network"],
+    "modules-right": ["battery", "backlight", "memory", "network"],
     "hyprland/workspaces": {
 		"format": "{name}: {icon}",
 		"format-icons": {
@@ -51,25 +51,7 @@
 			"on-scroll-down": "shift_down"
 		}
     },
-	"battery#BAT0": {
-		"bat": "BAT0",
-		"interval": 60,
-		"states": {
-			"warning": 30,
-			"critical": 15
-		},
-		"events": {
-			"on-discharging-warning": "notify-send -u normal 'Low Battery'",
-			"on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
-			"on-charging-100": "notify-send -u normal 'Battery Full!'"
-		},
-		"format": "{capacity}% {icon}",
-		"format-icons": ["", "", "", "", ""],
-		"max-length": 25,
-		"tooltip-format": "Hello world"
-	},
-	"battery#BAT1": {
-		"bat": "BAT1",
+	"battery": {
 		"interval": 60,
 		"states": {
 			"warning": 30,
