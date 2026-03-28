@@ -39,6 +39,7 @@
 		"tooltip-format": "Hello world"
     },
     "clock": {
+		"timezone": "Europe/Berlin",
         "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%H:%M}",
 		"tooltip-format": "hello world"
