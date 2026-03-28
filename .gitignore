@@ -20,4 +20,4 @@
 !alacritty/*
 
 #Unignore waybar config
-!waybar/*
+!waybar/*/*
