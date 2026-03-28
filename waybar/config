@@ -1,7 +1,7 @@
 {
     "modules-left": [ "hyprland/workspaces" ],
     "modules-center": [ "clock" ],
-    "modules-right": ["battery", "backlight", "memory", "network"],
+    "modules-right": ["group/scripts", "battery", "backlight", "memory", "network"],
     "hyprland/workspaces": {
 		"format": "{name}: {icon}",
 		"format-icons": {
@@ -55,5 +55,12 @@
 	"battery": {
 		"interval": 5,
 		"format": "{capacity}% ",
+	},
+	"custom/githubInbox": {
+		"format": "",
+	},
+	"group/scripts": {
+		"orientation": "horizontal",
+		"modules": ["custom/githubInbox", "backlight"]
 	},
 }
