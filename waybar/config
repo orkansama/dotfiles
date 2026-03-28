@@ -42,7 +42,14 @@
 		"timezone": "Europe/Berlin",
         "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%H:%M}",
-		"tooltip-format": "hello world"
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"actions": {
+			"on-click-right": "mode",
+			"on-click-forward": "tz_up",
+			"on-click-backward": "tz_down",
+			"on-scroll-up": "shift_up",
+			"on-scroll-down": "shift_down"
+		}
     },
 	"battery#BAT0": {
 		"bat": "BAT0",
