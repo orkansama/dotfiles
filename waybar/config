@@ -32,7 +32,7 @@
 		"format-wifi": " {} ({signalStrength}%)",
 		"format-ethernet": "{ifname}",
 		"format-disconnected": "󱘖",
-		"tooltip-format": "Hello world"
+		"tooltip-format": "{ifname}",
 	},
     "backlight": {
         "format": "󰃞 {}%",
