@@ -52,7 +52,7 @@
 		}
     },
 	"battery": {
-		"interval": 60,
+		"interval": 5,
 		"states": {
 			"warning": 30,
 			"critical": 15
@@ -65,6 +65,6 @@
 		"format": "{capacity}% {icon}",
 		"format-icons": ["", "", "", "", ""],
 		"max-length": 25,
-		"tooltip-format": "Hello world"
+		"tooltip-format": "{time} remaining"
 	},
 }
