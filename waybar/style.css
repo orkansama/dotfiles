@@ -59,3 +59,16 @@
   margin: 6px 5px;
   padding: 0px 6px;
 }
+
+#custom-githubInbox {
+  background: #cdd6f4;
+  padding-right: 4px; /* Why do i need this?. I think its the icon itself?*/
+  border-radius: 10px;
+  min-width: 20px;
+  margin: 6px 5px;
+}
+
+#scripts {
+  background: #FF3131;
+  margin-right: 50px;
+}
