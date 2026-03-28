@@ -24,8 +24,6 @@
     "memory": {
         "interval": 5,
         "format": "󰍛 {}%",
-        "max-length": 10,
-		"tooltip-format": "hello world"
     },
 	"network": {
 		"interval": 5,
