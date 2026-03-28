@@ -57,7 +57,11 @@
 		"format": "{capacity}% ",
 	},
 	"custom/githubInbox": {
-		"format": "",
+		"format": " {text}",
+		"interval": 60,
+		"exec": "./scripts/fetchGithubInbox.sh",
+		"tooltip-format": "Unread Github notifications",
+		"on-click": "xdg-open https://github.com/notifications"
 	},
 	"group/scripts": {
 		"orientation": "horizontal",
