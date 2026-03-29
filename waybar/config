@@ -60,10 +60,9 @@
 		"interval": 60,
 		"format": " {percentage}",
 		"return-type": "json",
-		TODO change behavior if no connection is there (change icon to "󱘖")
 		"exec": "./scripts/fetchGithubInbox.sh",
 		"tooltip-format": "Unread Github notifications",
-		"on-click": "xdg-open https://github.com/notifications"
+		"on-click": "xdg-open https://github.com/notifications",
 	},
 	"group/scripts": {
 		"orientation": "horizontal",
