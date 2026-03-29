@@ -60,6 +60,16 @@
   padding: 0px 6px;
 }
 
+#custom-power {
+  background: #d20f39;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 10px;
+  min-width: 20px;
+  margin: 6px 5px;
+}
+
+
 #custom-githubInbox {
   background: #cdd6f4;
   padding-right: 4px;
