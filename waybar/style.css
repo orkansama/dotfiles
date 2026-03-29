@@ -52,6 +52,14 @@
   padding: 0px 6px;
 }
 
+#pulseaudio {
+  background: #89b4fa;
+  border-radius: 10px;
+  min-width: 40px;
+  margin: 6px 5px;
+  padding: 0px 6px;
+}
+
 #network.disconnected {
   background: #d20f39; /* Red */
   border-radius: 10px;
@@ -68,7 +76,6 @@
   min-width: 20px;
   margin: 6px 5px;
 }
-
 
 #custom-githubInbox {
   background: #cdd6f4;
