@@ -79,6 +79,10 @@
   margin: 6px 5px;
 }
 
+#powersegment {
+  margin-left: 50px;
+}
+
 #scripts {
   margin-right: 50px;
 }
