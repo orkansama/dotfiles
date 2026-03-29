@@ -57,8 +57,9 @@
 		"format": "{capacity}% ",
 	},
 	"custom/githubInbox": {
-		"format": " {text}",
 		"interval": 60,
+		"format": " {percentage}",
+		"return-type": "json",
 		"exec": "./scripts/fetchGithubInbox.sh",
 		"tooltip-format": "Unread Github notifications",
 		"on-click": "xdg-open https://github.com/notifications"
