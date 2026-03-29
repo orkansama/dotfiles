@@ -65,6 +65,6 @@
 	},
 	"group/scripts": {
 		"orientation": "horizontal",
-		"modules": ["custom/githubInbox", "backlight"]
+		"modules": ["custom/githubInbox"]
 	},
 }
