@@ -60,6 +60,7 @@
 		"format": "󰐥",
 		"on-click": "./scripts/shutdownScript.sh",
 		"on-click-right": "./scripts/rebootScript.sh",
+		"tooltip-format": "Left-Click: Shutdown, Right-Click: Reboot"
 	},
 	"custom/githubInbox": {
 		"interval": 60,
