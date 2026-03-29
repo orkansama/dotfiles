@@ -6,4 +6,6 @@
 # List notifications for the authenticated user
 
 notifications=$(gh api /notifications | jq length)
-echo "$notifications"
+fakeJson="{\"percentage\": $notifications}"
+
+echo "$fakeJson"
