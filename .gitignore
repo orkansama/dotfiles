@@ -9,8 +9,8 @@
 !hypr/**
 
 #Unignore Wofi config
-!wofi/
-!wofi/**
+!rofi/
+!rofi/**
 
 #Unignore zsh config
 !zsh/.zshenv
