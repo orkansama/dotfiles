@@ -5,17 +5,17 @@ startup_mode = "Fullscreen"
 size = 12.0
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "Noto Sans Symbols 2"
 style = "Regular"
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
+family = "Noto Sans Symbols 2"
 style = "Bold"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font"
+family = "Noto Sans Symbols 2"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font"
+family = "Noto Sans Symbols 2"
 style = "Bold Italic"
