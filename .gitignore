@@ -22,3 +22,5 @@ zsh/*
 
 #Unignore waybar config
 !waybar/*/*
+
+nvim
