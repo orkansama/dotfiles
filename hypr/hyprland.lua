@@ -236,7 +236,7 @@ hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(applicationSwitcher))
-hl.bind(mainMod .. " + v", hl.dsp.exec_cmd(clipboardHistory)) --TODO: Add "script"-directory to hypr
+hl.bind(mainMod .. " + v", hl.dsp.exec_cmd(clipboardHistory))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + h",  hl.dsp.focus({ direction = "left" }))
