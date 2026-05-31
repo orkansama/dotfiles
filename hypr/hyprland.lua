@@ -5,13 +5,7 @@ require("autostart")
 require("enviroment_variables")
 require("looks_and_feel")
 require("misc")
-
--- Example per-device config
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
-hl.device({
-	name = "epic-mouse-v1",
-	sensitivity = -0.5,
-})
+require("devices")
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind(
