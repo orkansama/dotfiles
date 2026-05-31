@@ -11,6 +11,7 @@ require("window")
 require("autostart")
 require("enviroment_variables")
 require("looks_and_feel")
+require("misc")
 
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"
