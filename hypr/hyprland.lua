@@ -9,6 +9,7 @@ require("keybinds")
 require("input")
 require("window")
 require("autostart")
+require("enviroment_variables")
 
 -----------------------
 ----- PERMISSIONS -----
