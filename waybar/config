@@ -56,27 +56,4 @@
 		"scroll-step": 1,
 		"on-click": "pavucontrol"
 	},
-	"custom/power": {
-		"format": "󰐥",
-		"on-click": "./scripts/shutdownScript.sh",
-		"on-click-right": "./scripts/rebootScript.sh",
-		"tooltip-format": "Left-Click: Shutdown, Right-Click: Reboot"
-	},
-	"custom/githubInbox": {
-		"interval": 60,
-		"format": " {percentage}",
-		"return-type": "json",
-		"exec": "./scripts/fetchGithubInbox.sh",
-		"tooltip-format": "Unread Github notifications",
-		"on-click": "xdg-open https://github.com/notifications",
-	},
-	"group/scripts": {
-		"orientation": "horizontal",
-		"modules": ["custom/githubInbox"]
-	},
-
-	"group/powersegment": {
-		"orientation": "horizontal",
-		"modules": ["custom/power"]
-	},
 }
