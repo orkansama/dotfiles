@@ -5,12 +5,14 @@ local fileManager = "dolphin"
 local browser = "firefox"
 local applicationSwitcher = "rofi -show drun"
 local clipboardHistory = "rofi -modi clipboard:~/.config/hypr/scripts/cliphist-rofi-img -show clipboard -show-icons"
+local screenshotRegion = "hyprshot -m region"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(applicationSwitcher))
 hl.bind(mainMod .. " + v", hl.dsp.exec_cmd(clipboardHistory))
+hl.bind(mainMod .. " + SHIFT + s", hl.dsp.exec_cmd(screenshotRegion))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("maximized", "toggle"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
@@ -43,9 +45,9 @@ for i = 1, 10 do
 	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
--- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+-- -- Example special workspace (scratchpad)
+-- hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
+-- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 hl.bind(mainMod .. " + CTRL + l", function()
     local active_ws = hl.get_active_workspace()
