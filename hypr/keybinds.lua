@@ -34,9 +34,23 @@ end
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
--- Scroll through existing workspaces with mainMod + scroll
-hl.bind(mainMod .. " + CTRL + l", hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + CTRL + h", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mainMod .. " + CTRL + l", function()
+    local active_ws = hl.get_active_workspace()
+    local last_ws = 3
+
+    if active_ws.id ~= last_ws then
+        hl.dispatch(hl.dsp.focus({ workspace = "e+1" }))
+    end
+end)
+
+hl.bind(mainMod .. " + CTRL + h", function()
+    local active_ws = hl.get_active_workspace()
+    local last_ws = 1
+
+    if active_ws.id ~= last_ws then
+        hl.dispatch(hl.dsp.focus({ workspace = "e-1" }))
+    end
+end)
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
