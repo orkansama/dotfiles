@@ -1,6 +1,7 @@
 hl.workspace_rule({
     workspace = "1",
     default_name = "Code Editor",
+    default = true,
     persistent = true,
 })
 
