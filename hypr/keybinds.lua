@@ -22,7 +22,6 @@ hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
 
 hl.bind("ALT + SHIFT + TAB", function ()
-    local clientIsFullScreen = hl.fullscreen_state_client;
     hl.dispatch(hl.dsp.window.cycle_next());
     hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"));
 end)
@@ -31,8 +30,6 @@ hl.bind("ALT + TAB", function ()
     hl.dispatch(hl.dsp.window.cycle_next({ next = false }));
     hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"));
 end)
-
--- hl.bind("ALT + TAB", hl.dsp.window.cycle_next({ next = false }))
 
 hl.bind(
 	mainMod .. " + M",
