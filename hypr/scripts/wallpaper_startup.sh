@@ -10,9 +10,9 @@ WALLPAPER_DIR="$HOME/.config/hypr/wallpapers"
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
 
 # Setzen
-FirstMonitor="$( sudo cat ../settings.json | jq -r '.firstMonitor' )"
-SecondMonitor="$( sudo cat ../settings.json | jq -r '.secondMonitor' )"
-WallpaperScriptEnabled="$( sudo cat ../settings.json | jq -r '.wallpaperScriptEnabled' )"
+FirstMonitor="$( cat ../settings.json | jq -r '.firstMonitor' )"
+SecondMonitor="$( cat ../settings.json | jq -r '.secondMonitor' )"
+WallpaperScriptEnabled="$( cat ../settings.json | jq -r '.wallpaperScriptEnabled' )"
 
 if [[ "$WallpaperScriptEnabled" ]]; then
     if [[ "$FirstMonitor" != null  ]]; then
