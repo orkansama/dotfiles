@@ -21,14 +21,19 @@ hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
 
-hl.bind("ALT + SHIFT + TAB", function ()
-    hl.dispatch(hl.dsp.window.cycle_next());
-    hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"));
+hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.swap({ direction = "left" }))
+hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.swap({ direction = "right" }))
+hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.swap({ direction = "up" }))
+hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.swap({ direction = "down" }))
+
+hl.bind("ALT + SHIFT + TAB", function()
+	hl.dispatch(hl.dsp.window.cycle_next())
+	hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"))
 end)
 
-hl.bind("ALT + TAB", function ()
-    hl.dispatch(hl.dsp.window.cycle_next({ next = false }));
-    hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"));
+hl.bind("ALT + TAB", function()
+	hl.dispatch(hl.dsp.window.cycle_next({ next = false }))
+	hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"))
 end)
 
 hl.bind(
@@ -47,21 +52,21 @@ end
 -- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 hl.bind(mainMod .. " + CTRL + l", function()
-    local active_ws = hl.get_active_workspace()
-    local last_ws = 3
+	local active_ws = hl.get_active_workspace()
+	local last_ws = 3
 
-    if active_ws.id ~= last_ws then
-        hl.dispatch(hl.dsp.focus({ workspace = "e+1" }))
-    end
+	if active_ws.id ~= last_ws then
+		hl.dispatch(hl.dsp.focus({ workspace = "e+1" }))
+	end
 end)
 
 hl.bind(mainMod .. " + CTRL + h", function()
-    local active_ws = hl.get_active_workspace()
-    local last_ws = 1
+	local active_ws = hl.get_active_workspace()
+	local last_ws = 1
 
-    if active_ws.id ~= last_ws then
-        hl.dispatch(hl.dsp.focus({ workspace = "e-1" }))
-    end
+	if active_ws.id ~= last_ws then
+		hl.dispatch(hl.dsp.focus({ workspace = "e-1" }))
+	end
 end)
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
