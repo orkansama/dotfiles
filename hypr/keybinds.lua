@@ -5,7 +5,7 @@ local fileManager = "dolphin"
 local browser = "firefox"
 local applicationSwitcher = "rofi -show drun"
 local clipboardHistory = "rofi -modi clipboard:~/.config/hypr/scripts/cliphist-rofi-img -show clipboard -show-icons"
-local screenshotRegion = "hyprshot -m region"
+local screenshotRegion = "hyprshot -m region -o ~/Pictures/Screenshots"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
