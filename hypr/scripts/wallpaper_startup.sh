@@ -14,7 +14,7 @@ FirstMonitor="$( cat ../settings.json | jq -r '.firstMonitor' )"
 SecondMonitor="$( cat ../settings.json | jq -r '.secondMonitor' )"
 WallpaperScriptEnabled="$( cat ../settings.json | jq -r '.wallpaperScriptEnabled' )"
 
-if [[ "$WallpaperScriptEnabled" ]]; then
+if [[ "$WallpaperScriptEnabled" = true ]]; then
     if [[ "$FirstMonitor" != null  ]]; then
         hyprctl hyprpaper wallpaper "$FirstMonitor,$WALLPAPER,fill"
     fi
