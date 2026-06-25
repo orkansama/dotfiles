@@ -15,8 +15,20 @@ hl.config({
 
 		-- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
 		allow_tearing = false,
+	},
 
-		layout = "dwindle",
+	dwindle = {
+		force_split = 0,
+		preserve_split = true,
+		smart_split = false,
+		smart_resizing = true,
+		permanent_direction_override = false,
+		special_scale_factor = 1,
+		split_width_multiplier = 1.0,
+		use_active_for_splits = true,
+		default_split_ratio = 1.0,
+		split_bias = 0,
+		precise_mouse_move = false,
 	},
 
 	decoration = {
@@ -74,4 +86,3 @@ hl.animation({ leaf = "workspaces", enabled = true, speed = 1.94, bezier = "almo
 hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1.21, bezier = "almostLinear", style = "fade" })
 hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
 hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" })
-

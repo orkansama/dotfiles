@@ -26,6 +26,8 @@ hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.swap({ direction = "right" }))
 hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.swap({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.swap({ direction = "down" }))
 
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.layout("togglesplit"))
+
 hl.bind("ALT + SHIFT + TAB", function()
 	hl.dispatch(hl.dsp.window.cycle_next())
 	hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"))
