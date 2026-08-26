@@ -1,11 +1,11 @@
 hl.window_rule({
-    name = "apply-opacity-everwhere",
-	match = { class = ".*" },
-	opacity = "0.95",
+	name = "apply-opacity-vscode",
+	match = { class = "code" },
+	opacity = "0.98",
 })
 
 hl.window_rule({
-    name = "remove-firefox-opacity",
-	match = { class = "firefox" },
-    opacity = "1"
+	name = "apply-opacity-alacritty",
+	match = { class = "Alacritty" },
+	opacity = "0.98",
 })
