@@ -1,0 +1,5 @@
+[opener]
+edit = [
+    { run = "nvim %s", block = true, desc = "Neovim" },
+    { run = "code %s", block = true, desc = "VsCode" },
+]

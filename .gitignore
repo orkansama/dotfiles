@@ -23,4 +23,10 @@ zsh/*
 #Unignore waybar config
 !waybar/*/*
 
+#Unignore yazi config
+!yazi/*
+
+#Unignore tmux config
+!tmux/*
+
 nvim
