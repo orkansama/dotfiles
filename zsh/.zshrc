@@ -7,6 +7,7 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 # OH MY ZSH
+export EDITOR="nvim"
 export ZSH="$ZDOTDIR/ohmyzsh/"
 ZSH_THEME="minimal"
 
