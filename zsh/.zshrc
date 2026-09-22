@@ -9,7 +9,7 @@ setopt SHARE_HISTORY
 # OH MY ZSH
 export EDITOR="nvim"
 export ZSH="$ZDOTDIR/ohmyzsh/"
-ZSH_THEME="minimal"
+ZSH_THEME="agnoster"
 
 plugins=(zoxide archlinux)
 
