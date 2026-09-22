@@ -4,7 +4,19 @@ local terminal = "alacritty"
 local fileManager = "dolphin"
 local browser = "firefox"
 local applicationSwitcher = "rofi -show drun"
-local clipboardHistory = "rofi -modi clipboard:~/.config/hypr/scripts/cliphist-rofi-img -show clipboard -show-icons"
+
+local clipboardMode = "clipboard:~/.config/hypr/scripts/cliphist-rofi-img"
+local emojiMode = "emoji:'rofimoji -a copy --clipboarder wl-copy'"
+local kamojiMode = "emoji:'rofimoji --files kaomoji -a copy --clipboarder wl-copy'"
+
+local clipboardHistory = "rofi -modi "
+	.. clipboardMode
+	.. ","
+	.. emojiMode
+	.. ","
+	.. kamojiMode
+	.. " -show clipboard -show-icons"
+
 local screenshotRegion = "hyprshot -m region -o ~/Pictures/Screenshots"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
