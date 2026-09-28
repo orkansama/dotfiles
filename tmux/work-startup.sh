@@ -15,11 +15,6 @@ then
     # Start New Session with our name
     tmux new-session -d -s $session
 
-    # create normal terminal
-    terminal_window_name="terminal"
-    tmux new-window -t $session:0
-    tmux rename-window -t $session:0 $terminal_window_name
-
     # create lazygit
     lazygit_window_name="lazygit"
     tmux new-window -t $session:1 -n $lazygit_window_name
