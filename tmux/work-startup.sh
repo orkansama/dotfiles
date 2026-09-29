@@ -18,16 +18,18 @@ if [ "$SESSIONEXISTS" != "" ]
 
         # create lazygit
         lazygit_window_name="lazygit"
-        tmux new-window -t $new_session_name:1 -n $lazygit_window_name
+        tmux new-window -t $new_session_name -n $lazygit_window_name
         tmux send-keys -t $lazygit_window_name "lazygit" C-m
 
         # create claude window
         claude_window_name="claude"
-        tmux new-window -t $new_session_name:2 -n $claude_window_name
+        tmux new-window -t $new_session_name -n $claude_window_name
         tmux send-keys -t $claude_window_name 'claude' C-m
 
         # create yazi window
         yazi_window_name="yazi"
-        tmux new-window -t $new_session_name:3 -n $yazi_window_name
+        tmux new-window -t $new_session_name -n $yazi_window_name
         tmux send-keys -t $yazi_window_name 'yazi' C-m
+
+        tmux kill-window -t $new_session_name:1
 fi
