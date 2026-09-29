@@ -5,8 +5,8 @@ user=$(whoami)
 selected_directory=$(cd "/home/$user/projects/" && ls -d */ | fzf)
 path_to_use="/home/$user/projects/${selected_directory}"
 
-SESSIONEXISTS=$(tmux list-sessions | grep $selected_directory)
-if [ "$SESSIONEXISTS" != "" ]
+SESSION_EXISTS=$(tmux list-sessions | grep $selected_directory)
+if [ "$SESSION_EXISTS" != "" ]
     then
         tmux attach-session -t $selected_directory:1
     else
@@ -32,4 +32,12 @@ if [ "$SESSIONEXISTS" != "" ]
         tmux send-keys -t $yazi_window_name 'yazi' C-m
 
         tmux kill-window -t $new_session_name:1
+fi
+
+misc_session_name="misc"
+SESSION_HAS_MISC=$(tmux list-sessions | grep $misc_session_name)
+if [ "$SESSION_HAS_MISC" = "" ]
+then
+    # Create misc session
+    tmux new-session -d -s $misc_session_name
 fi
