@@ -4,6 +4,9 @@
 #Unignore all Subfiles
 !*/
 
+#Unignore all scripts
+!*.sh
+
 #Unignore Hyprland config
 !hypr/
 !hypr/**
