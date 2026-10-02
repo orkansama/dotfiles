@@ -29,3 +29,6 @@ zsh/*
 #Unignore tmux config
 !tmux/**
 tmux/plugins
+
+#Unignore tmux config
+!lazygit/*

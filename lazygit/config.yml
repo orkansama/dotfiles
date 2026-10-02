@@ -1,0 +1,7 @@
+gui:
+  showCommandLog: false
+  showIcons: false
+
+os:
+  edit: "code {{filename}}"
+  open: "code {{filename}}"
