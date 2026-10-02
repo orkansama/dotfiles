@@ -30,5 +30,8 @@ zsh/*
 !tmux/**
 tmux/plugins
 
-#Unignore tmux config
+#Unignore lazygit config
 !lazygit/*
+
+#Unignore delta config
+!delta/*

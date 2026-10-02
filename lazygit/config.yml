@@ -5,3 +5,8 @@ gui:
 os:
   edit: "code {{filename}}"
   open: "code {{filename}}"
+
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
