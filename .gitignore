@@ -35,3 +35,6 @@ tmux/plugins
 
 #Unignore delta config
 !delta/*
+
+#Unignore .gitconfig config
+!.gitconfig
