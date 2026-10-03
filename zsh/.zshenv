@@ -1,5 +1,6 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export MANPAGER='nvim +Man!'
 
 export DOTNET_ROOT="$HOME/.dotnet"
 
