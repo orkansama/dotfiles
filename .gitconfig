@@ -7,6 +7,3 @@
 	defaultBranch = main
 [include]
     path = ~/.config/delta/delta.gitconfig
-[credential "https://github.com"] # Use "gh auth login" credentials for login
-	helper =
-	helper = !/usr/bin/gh auth git-credential
