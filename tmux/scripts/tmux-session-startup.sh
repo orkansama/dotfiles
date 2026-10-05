@@ -1,11 +1,12 @@
 #!/bin/bash
+set -e
 
 # Session Name
 user=$(whoami)
 selected_directory=$(cd "/home/$user/projects/" && ls -d */ | fzf)
 path_to_use="/home/$user/projects/${selected_directory}"
 
-SESSION_EXISTS=$(tmux list-sessions | grep $selected_directory)
+SESSION_EXISTS=$(tmux list-sessions | grep $selected_directory || true)
 if [ "$SESSION_EXISTS" != "" ]
     then
         exit 1
@@ -19,21 +20,21 @@ if [ "$SESSION_EXISTS" != "" ]
         # create lazygit
         lazygit_window_name="lazygit"
         tmux new-window -t $new_session_name -n $lazygit_window_name
-        tmux send-keys -t $lazygit_window_name "lazygit" C-m
+        tmux send-keys -t "$new_session_name:$lazygit_window_name" "lazygit" C-m
 
         # create claude window
         claude_window_name="claude"
         tmux new-window -t $new_session_name -n $claude_window_name
-        tmux send-keys -t $claude_window_name 'claude' C-m
+        tmux send-keys -t "$new_session_name:$claude_window_name" 'claude' C-m
 
         # create yazi window
         yazi_window_name="yazi"
         tmux new-window -t $new_session_name -n $yazi_window_name
-        tmux send-keys -t $yazi_window_name 'yazi' C-m
+        tmux send-keys -t "$new_session_name:$yazi_window_name" 'yazi' C-m
 fi
 
 misc_session_name="misc"
-SESSION_HAS_MISC=$(tmux list-sessions | grep $misc_session_name)
+SESSION_HAS_MISC=$(tmux list-sessions | grep $misc_session_name || true)
 if [ "$SESSION_HAS_MISC" = "" ]
 then
     # Create misc session
