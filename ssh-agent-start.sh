@@ -21,6 +21,6 @@ user_select_key_with_fzf() {
     echo "Done!"
 }
 
-killall ssh-agent
-eval `ssh-agent -s`
+killall -w ssh-agent
+eval `ssh-agent -s -a ~/.ssh/agent.sock`
 user_select_key_with_fzf
