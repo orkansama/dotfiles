@@ -8,7 +8,7 @@ path_to_use="/home/$user/projects/${selected_directory}"
 SESSION_EXISTS=$(tmux list-sessions | grep $selected_directory)
 if [ "$SESSION_EXISTS" != "" ]
     then
-        tmux attach-session -t $selected_directory:1
+        exit 1
     else
         new_session_name=$selected_directory
         cd $path_to_use || exit 1
@@ -30,8 +30,6 @@ if [ "$SESSION_EXISTS" != "" ]
         yazi_window_name="yazi"
         tmux new-window -t $new_session_name -n $yazi_window_name
         tmux send-keys -t $yazi_window_name 'yazi' C-m
-
-        tmux kill-window -t $new_session_name:1
 fi
 
 misc_session_name="misc"
