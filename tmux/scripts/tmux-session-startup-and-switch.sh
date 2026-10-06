@@ -32,6 +32,11 @@ if [ "$SESSION_EXISTS" = "" ]; then
     yazi_window_name="yazi"
     tmux new-window -t $new_session_name -n $yazi_window_name
     tmux send-keys -t "$new_session_name:$yazi_window_name" 'yazi' C-m
+
+    tmux switch-client -t $new_session_name:0
+
+    else {
+        tmux switch-client -t $new_session_name
+    }
 fi
 
-tmux switch-client -t $new_session_name:0
