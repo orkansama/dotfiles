@@ -1,6 +1,9 @@
 gui:
   showCommandLog: false
   showIcons: false
+  theme:
+    selectedLineBgColor:
+      - reverse
 
 os:
   edit: "code {{filename}}"
