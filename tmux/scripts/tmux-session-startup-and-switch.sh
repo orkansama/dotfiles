@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# -- Neovim/VSCode
+selected_code_editor="Neovim"
+
 misc_session_name="misc"
 SESSION_HAS_MISC=$(tmux list-sessions | grep $misc_session_name || true)
 if [ "$SESSION_HAS_MISC" = "" ]
@@ -28,10 +31,12 @@ if [ "$SESSION_EXISTS" = "" ]; then
     tmux new-window -t $new_session_name -n $claude_window_name
     tmux send-keys -t "$new_session_name:$claude_window_name" 'claude' C-m
 
-    # create yazi window
-    yazi_window_name="yazi"
-    tmux new-window -t $new_session_name -n $yazi_window_name
-    tmux send-keys -t "$new_session_name:$yazi_window_name" 'yazi' C-m
+    if [ "$selected_code_editor" = "VSCode" ]; then
+        # create yazi window
+        yazi_window_name="yazi"
+        tmux new-window -t $new_session_name -n $yazi_window_name
+        tmux send-keys -t "$new_session_name:$yazi_window_name" 'yazi' C-m
+    fi
 
     tmux switch-client -t $new_session_name:0
 
