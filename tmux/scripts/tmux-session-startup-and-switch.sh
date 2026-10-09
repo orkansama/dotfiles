@@ -11,7 +11,9 @@ then
     tmux new-session -d -s $misc_session_name
 fi
 
-selected_directory=$(cd "$HOME/projects/" && ls -d */ | fzf)
+last_session=$(tmux display-message -p '#{client_last_session}')
+selected_directory=$(cd "$HOME/projects/" && ls -d */ | awk -v l="$last_session" '{print ($0==l ? "% " : "  ") $0}' | fzf)
+selected_directory="${selected_directory:2}"
 full_path_of_selected_directory="$HOME/projects/${selected_directory}"
 new_session_name=$selected_directory
 
