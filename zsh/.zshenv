@@ -4,4 +4,5 @@ export MANPAGER='nvim +Man!'
 
 export DOTNET_ROOT="$HOME/.dotnet"
 
-export PATH="$HOME/.dotnet/tools:$PATH"
+# export PATH="$HOME/.dotnet/tools:$PATH"
+export PATH="$HOME/.dotnet:$HOME/.dotnet/tools:$PATH"
