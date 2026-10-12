@@ -28,10 +28,6 @@ gui:
     defaultFgColor:
       - '#cdd6f4'
 
-os:
-  edit: "code {{filename}}"
-  open: "code {{filename}}"
-
 git:
   pagers:
     - colorArg: always
