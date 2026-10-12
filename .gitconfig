@@ -5,5 +5,7 @@
 	editor = nvim
 [init]
 	defaultBranch = main
+[remote "origin"]
+	prune = true
 [include]
     path = ~/.config/delta/delta.gitconfig
