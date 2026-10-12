@@ -30,7 +30,9 @@ zsh/*
 !yazi/*
 
 #Unignore tmux config
-!tmux/**
+!tmux/*
+tmux/plugins/*
+!tmux/plugins/tpm
 
 #Unignore lazygit config
 !lazygit/**
