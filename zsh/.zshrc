@@ -6,6 +6,20 @@ setopt HIST_IGNORE_SPACE
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
+if [ -n "$TMUX" ]; then
+    nvim() {
+        sessionname="$(tmux display-message -p '#S')"
+
+        local socket="/tmp/neovim_${sessionname}"
+
+        if [ ! -e "$socket" ]; then
+            command nvim --listen "$socket" "$@"
+        else
+            command nvim "$@"
+        fi
+    }
+fi
+
 # OH MY ZSH
 export EDITOR="nvim"
 export ZSH="$ZDOTDIR/ohmyzsh/"
