@@ -43,7 +43,7 @@ if [ "$SESSION_EXISTS" = "" ]; then
     tmux switch-client -t $new_session_name:1
 
     else {
-        tmux switch-client -t $new_session_name
+        tmux switch-client -t $new_session_name:1
     }
 fi
 
