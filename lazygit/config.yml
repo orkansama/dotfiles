@@ -35,3 +35,6 @@ os:
   edit: 'nvim --server "/tmp/neovim_$(tmux display-message -p "#S")" --remote {{filename}}'
   open: 'nvim --server "/tmp/neovim_$(tmux display-message -p "#S")" --remote {{filename}}'
   editInTerminal: false
+
+refresher:
+  refreshInterval: 1
