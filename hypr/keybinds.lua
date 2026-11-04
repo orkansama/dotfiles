@@ -25,7 +25,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(applicationSwitcher))
 hl.bind(mainMod .. " + v", hl.dsp.exec_cmd(clipboardHistory))
 hl.bind(mainMod .. " + SHIFT + s", hl.dsp.exec_cmd(screenshotRegion))
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("maximized", "toggle"))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("maximized"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
@@ -42,12 +42,12 @@ hl.bind(mainMod .. " + SHIFT + P", hl.dsp.layout("togglesplit"))
 
 hl.bind("ALT + SHIFT + TAB", function()
 	hl.dispatch(hl.dsp.window.cycle_next())
-	hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"))
+	hl.dispatch(hl.dsp.window.fullscreen("maximized"))
 end)
 
 hl.bind("ALT + TAB", function()
 	hl.dispatch(hl.dsp.window.cycle_next({ next = false }))
-	hl.dispatch(hl.dsp.window.fullscreen("maximized", "toggle"))
+	hl.dispatch(hl.dsp.window.fullscreen("maximized"))
 end)
 
 hl.bind(
