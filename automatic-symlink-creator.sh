@@ -2,7 +2,7 @@
 set -e
 
 dirs=(
-    alacritty
+    kitty
     hypr
     lazygit
     rofi

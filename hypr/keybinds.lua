@@ -1,6 +1,6 @@
 local mainMod = "SUPER"
 
-local terminal = "alacritty"
+local terminal = "kitty"
 local fileManager = "dolphin"
 local browser = "firefox"
 local applicationSwitcher = "rofi -show drun"

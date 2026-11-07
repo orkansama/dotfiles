@@ -20,8 +20,8 @@ zsh/*
 !zsh/.zshenv
 !zsh/.zshrc
 
-#Unignore alacritty config
-!alacritty/*
+#Unignore kitty config
+!kitty/*
 
 #Unignore waybar config
 !waybar/*/*
