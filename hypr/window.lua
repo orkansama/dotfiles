@@ -5,7 +5,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "apply-opacity-alacritty",
-	match = { class = "Alacritty" },
+	name = "apply-opacity-kitty",
+	match = { class = "kitty" },
 	opacity = "0.98",
 })
