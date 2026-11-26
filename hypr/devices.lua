@@ -3,3 +3,7 @@ hl.device({
 	sensitivity = -0.5,
 })
 
+hl.device({
+	name = "razer-razer-deathadder-essential",
+	sensitivity = -0.6,
+})
